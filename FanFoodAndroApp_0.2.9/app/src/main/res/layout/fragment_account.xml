@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroun_a"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/fdctalog_top_title_bg"
+                android:paddingBottom="@dimen/selecevenue_titl_txt_paddingBottom"
+                android:paddingLeft="@dimen/selecevenue_titl_txt_paddingLeft"
+                android:paddingTop="@dimen/selecevenue_titl_txt_paddingTop"
+                android:text="User Information"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/frgmnt_sltvnu_top_title_txt"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/account_txt_fname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/payment_main_marginLeft"
+                        android:layout_marginRight="@dimen/payment_main_marginRight"
+                        android:layout_marginTop="@dimen/payment_component_margintop"
+                        android:background="@drawable/edittxt_default_bg"
+                        android:hint="@string/txt_signup_fname"
+                        android:inputType="textPersonName|textCapSentences"
+                        android:lines="1"
+                        android:maxLength="18"
+                        android:padding="@dimen/activity_input_pading"
+                        android:textSize="@dimen/editTxt_default_six"></EditText>
+
+                    <EditText
+                        android:id="@+id/account_txt_lname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/payment_main_marginLeft"
+                        android:layout_marginRight="@dimen/payment_main_marginRight"
+                        android:layout_marginTop="@dimen/payment_component_margintop"
+                        android:background="@drawable/edittxt_default_bg"
+                        android:hint="@string/txt_signup_lname"
+                        android:inputType="textPersonName|textCapSentences"
+                        android:lines="1"
+                        android:padding="@dimen/activity_input_pading"
+                        android:textSize="@dimen/editTxt_default_six" />
+
+                    <EditText
+                        android:id="@+id/account_txt_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/payment_main_marginLeft"
+                        android:layout_marginRight="@dimen/payment_main_marginRight"
+                        android:layout_marginTop="@dimen/payment_component_margintop"
+                        android:background="@drawable/edittxt_default_bg"
+                        android:hint="@string/txt_signup_email"
+                        android:inputType="textEmailAddress"
+                        android:lines="1"
+                        android:padding="@dimen/activity_input_pading"
+                        android:textSize="@dimen/editTxt_default_six" />
+
+                    <EditText
+                        android:id="@+id/account_txt_phonenum"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/payment_main_marginLeft"
+                        android:layout_marginRight="@dimen/payment_main_marginRight"
+                        android:layout_marginTop="@dimen/payment_component_margintop"
+                        android:background="@drawable/edittxt_default_bg"
+                        android:hint="@string/txt_signup_phnumber"
+                        android:inputType="number"
+                        android:lines="1"
+                        android:padding="@dimen/activity_input_pading"
+                        android:textSize="@dimen/editTxt_default_six" />
+
+                    <EditText
+                        android:id="@+id/account_txt_passwd"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/payment_main_marginLeft"
+                        android:layout_marginRight="@dimen/payment_main_marginRight"
+                        android:layout_marginTop="@dimen/payment_component_margintop"
+                        android:background="@drawable/edittxt_default_bg"
+                        android:hint="@string/txt_signup_passwd"
+                        android:inputType="textPassword"
+                        android:lines="1"
+                        android:padding="@dimen/activity_input_pading"
+                        android:textSize="@dimen/editTxt_default_six" />
+
+                    <EditText
+                        android:id="@+id/account_txt_passwd_con"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/payment_main_marginLeft"
+                        android:layout_marginRight="@dimen/payment_main_marginRight"
+                        android:layout_marginTop="@dimen/payment_component_margintop"
+                        android:background="@drawable/edittxt_default_bg"
+                        android:hint="@string/txt_signup_passwd2"
+                        android:inputType="textPassword"
+                        android:lines="1"
+                        android:padding="@dimen/activity_input_pading"
+                        android:textSize="@dimen/editTxt_default_six" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/payment_main_marginLeft"
+                        android:layout_marginRight="@dimen/payment_main_marginRight"
+                        android:layout_marginTop="@dimen/payment_component_margintop"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="1dp"
+                                android:layout_weight="0.4"
+                                android:background="@color/actionbar_backgrounf"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical"></LinearLayout>
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.2"
+                                android:gravity="center"
+                                android:text="@string/txt_signup_or"
+                                android:textSize="@dimen/txt_or_six" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="1dp"
+                                android:layout_weight="0.4"
+                                android:background="@color/actionbar_backgrounf"
+                                android:gravity="center_vertical"
+                                android:orientation="vertical"></LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/account_img_imageView1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="2dp"
+                                android:layout_weight="0.5"
+                                android:src="@drawable/img_signup_facebook" />
+
+                            <ImageView
+                                android:id="@+id/account_img_imageView2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:layout_weight="0.5"
+                                android:src="@drawable/img_signup_google" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/account_txt_passwd2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/payment_main_marginLeft"
+                        android:layout_marginRight="@dimen/payment_main_marginRight"
+                        android:layout_marginTop="@dimen/payment_component_margintop"
+                        android:background="@drawable/edittxt_default_bg"
+                        android:hint="@string/txt_signup_passwd1"
+                        android:inputType="textPassword"
+                        android:lines="1"
+                        android:padding="@dimen/activity_input_pading"
+                        android:textSize="@dimen/editTxt_default_six"
+                        android:visibility="gone" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/payment_main_marginLeft"
+                        android:layout_marginRight="@dimen/payment_main_marginRight"
+                        android:layout_marginTop="@dimen/payment_component_margintop"
+                        android:background="@drawable/edittxt_default_bg"
+                        android:hint="@string/txt_signup_passwd2"
+                        android:inputType="textPassword"
+                        android:lines="1"
+                        android:padding="@dimen/activity_input_pading"
+                        android:textSize="@dimen/editTxt_default_six"
+                        android:visibility="gone" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="@dimen/payment_main_marginLeft"
+                        android:layout_marginRight="@dimen/payment_main_marginRight"
+                        android:layout_marginTop="@dimen/payment_component_margintop"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/account_btn_updateInfo"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/btn_default"
+                            android:shadowColor="@color/btn_b_textshadow_default"
+                            android:shadowDx="1.5"
+                            android:shadowDy="1.5"
+                            android:shadowRadius="3"
+                            android:text="Update Sign Up"
+                            android:textColor="@color/btn_txt_color_default" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/fdctalog_top_title_bg"
+                        android:paddingBottom="@dimen/selecevenue_titl_txt_paddingBottom"
+                        android:paddingLeft="@dimen/selecevenue_titl_txt_paddingLeft"
+                        android:paddingTop="@dimen/selecevenue_titl_txt_paddingTop"
+                        android:text="Pay card information"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/frgmnt_sltvnu_top_title_txt"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/account_txt_cardName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/payment_main_marginLeft"
+                        android:layout_marginRight="@dimen/payment_main_marginRight"
+                        android:background="@drawable/edittxt_default_bg"
+
+                        android:hint="Card Name"
+
+                        android:lines="1"
+                        android:maxLength="20"
+                        android:padding="@dimen/payment_input_pading"
+                        android:textSize="@dimen/payment_input_default_siz"></EditText>
+
+                    <EditText
+                        android:id="@+id/account_txt_cardNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/payment_main_marginLeft"
+                        android:layout_marginRight="@dimen/payment_main_marginRight"
+                        android:background="@drawable/edittxt_default_bg"
+                        android:digits="0,1,2,3,4,5,6,7,8,9"
+                        android:hint="@string/txt_payment_hint_cardNo"
+                        android:inputType="number"
+                        android:lines="1"
+                        android:maxLength="20"
+                        android:padding="@dimen/payment_input_pading"
+                        android:textSize="@dimen/payment_input_default_siz"
+                        android:layout_marginTop="@dimen/payment_component_margintop" ></EditText>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/payment_main_marginLeft"
+                        android:layout_marginRight="@dimen/payment_main_marginRight"
+                        android:layout_marginTop="@dimen/payment_component_margintop"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/account_txt_mm"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:background="@drawable/edittxt_default_bg"
+                            android:digits="0,1,2,3,4,5,6,7,8,9"
+                            android:hint="@string/txt_payment_hint_mm"
+                            android:inputType="number"
+                            android:lines="1"
+                            android:maxLength="2"
+                            android:padding="@dimen/payment_input_pading"
+                            android:textSize="@dimen/payment_input_default_siz" />
+
+                        <EditText
+                            android:id="@+id/account_txt_yy"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:background="@drawable/edittxt_default_bg"
+                            android:digits="0,1,2,3,4,5,6,7,8,9"
+                            android:hint="@string/txt_payment_hint_yy"
+                            android:inputType="number"
+                            android:lines="1"
+                            android:maxLength="2"
+                            android:padding="@dimen/payment_input_pading"
+                            android:textSize="@dimen/payment_input_default_siz" />
+
+                        <EditText
+
+                            android:id="@+id/account_txt_cvv"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="0.4"
+                            android:background="@drawable/edittxt_default_bg"
+                            android:hint="@string/txt_payment_hint_cvv"
+                            android:inputType="number"
+                            android:lines="1"
+                            android:padding="@dimen/payment_input_pading"
+                            android:textSize="@dimen/payment_input_default_siz" />
+                    </LinearLayout>
+
+                    <AutoCompleteTextView
+                        android:id="@+id/account_txt_country"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/payment_main_marginLeft"
+                        android:layout_marginRight="@dimen/payment_main_marginRight"
+                        android:layout_marginTop="@dimen/payment_component_margintop"
+                        android:background="@drawable/edittxt_default_bg"
+                        android:hint="@string/txt_payment_hint_country"
+                        android:padding="@dimen/payment_input_pading"
+                        android:text=""
+                        android:textSize="@dimen/payment_input_default_siz" />
+
+                    <Button
+                        android:id="@+id/account_btn_id_register"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/payment_main_marginLeft"
+                        android:layout_marginRight="@dimen/payment_main_marginRight"
+                        android:layout_marginTop="@dimen/payment_component_margintop"
+                        android:background="@drawable/btn_default"
+                        android:shadowColor="@color/btn_b_textshadow_default"
+                        android:shadowDx="1.5"
+                        android:shadowDy="1.5"
+                        android:shadowRadius="3"
+                        android:text="Update"
+                        android:textColor="@color/btn_txt_color_default" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroun_a"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/frgmnt_sltvnu_txtTopTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/frgmnt_sltvnu_top_title_bg"
+        android:paddingBottom="@dimen/selecevenue_titl_txt_paddingBottom"
+        android:paddingLeft="@dimen/selecevenue_titl_txt_paddingLeft"
+        android:paddingTop="@dimen/selecevenue_titl_txt_paddingTop"
+        android:text="RECEIPT"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/frgmnt_sltvnu_top_title_txt"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/frgmnt_sltmnu_listView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/frgmnt_sltvnu_devide_layout1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/selecevenue_titl_txt_paddingBottom"
+                    android:text="YOUR ORDER NUMBER:"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/frgmnt_sltvnu_top_title_txt"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/receipt_orderId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="@dimen/selecevenue_titl_txt_paddingBottom"
+                    android:text="AI-673"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/frgmnt_sltvnu_top_title_txt"
+                    android:textSize="28sp" />
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_time" />
+
+                <TextView
+                    android:id="@+id/receipt_ordrTime"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/selecevenue_titl_txt_paddingBottom"
+                    android:text=""
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#303030"
+                    android:textSize="21sp" />
+
+                <TextView
+                    android:id="@+id/receipt_urMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="15dp"
+                    android:text="You will be notified when your order is ready. Show the concession staff your order number. Please check your order history for he updates. Thank You !"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#303030"
+                    android:textSize="21sp" />
+                
+                <TextView
+                    android:id="@+id/receipt_totalMony"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="20dp"
+                    android:text="Total: $270.00"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#303030"
+                    android:textSize="25sp" />
+
+
+                
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/frgmnt_sltvnu_devide_layout1"
+            android:layout_width="wrap_content"
+            android:layout_height="3dp"
+            android:layout_above="@+id/frgmnt_sltmnu_btomMenu"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/frgmnt_sltvnu_btom_lyout_bg"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/frgmnt_sltmnu_btomMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/actionbar_backgrounf"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="5dp"
+                android:padding="3dp"
+                android:src="@drawable/ic_drawer_select_venue" />
+
+            <TextView
+                android:id="@+id/frgmnt_sltvnu_txtBottomTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/selecevenue_titl_txt_paddingBottom"
+                android:layout_marginTop="@dimen/selecevenue_titl_txt_paddingTop"
+                android:gravity="center_horizontal"
+                android:text="@string/frgmnt_sltvnu_bottomTitl2"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/actionbar_textcolor"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Back to Concession"
+
+            android:id="@+id/backToConcession"
+            android:onClick="backToConcession"
+            android:layout_above="@+id/frgmnt_sltvnu_devide_layout1"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_default"
+            android:shadowColor="@color/btn_b_textshadow_default"
+            android:shadowDx="1.5"
+            android:shadowDy="1.5"
+            android:shadowRadius="3"
+            android:textColor="@color/btn_txt_color_default"/>
+    </RelativeLayout>
+
+</LinearLayout>

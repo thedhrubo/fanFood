@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/frgmnt_sltvnu_txtTopTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/frgmnt_sltvnu_top_title_bg"
+        android:paddingBottom="@dimen/selecevenue_titl_txt_paddingBottom"
+        android:paddingLeft="@dimen/selecevenue_titl_txt_paddingLeft"
+        android:paddingTop="@dimen/selecevenue_titl_txt_paddingTop"
+        android:text="@string/frgmnt_sltvnu_topTitl"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/frgmnt_sltvnu_top_title_txt"
+        android:textSize="18sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/frgmnt_sltvnu_btom_lyout_bg"
+        android:gravity="center"
+        android:orientation="horizontal" ></LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/frgmnt_sltvnu_btom_lyout_bg"
+            android:gravity="center"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/frgmnt_sltmnu_listView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/frgmnt_sltvnu_devide_layout1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/backgroun_a"
+            android:divider="@color/frgmnt_sltvnu_divid_color"
+            android:dividerHeight="1dip" >
+        </ListView>
+
+        <LinearLayout
+            android:id="@+id/frgmnt_sltvnu_devide_layout1"
+            android:layout_width="wrap_content"
+            android:layout_height="3dp"
+            android:layout_above="@+id/frgmnt_sltmnu_btomMenu"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/frgmnt_sltvnu_btom_lyout_bg"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/frgmnt_sltmnu_btomMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/actionbar_backgrounf"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginRight="5dp"
+                android:padding="3dp"
+                android:src="@drawable/ic_drawer_select_venue" />
+
+            <TextView
+                android:id="@+id/frgmnt_sltvnu_txtBottomTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/selecevenue_titl_txt_paddingBottom"
+                android:layout_marginTop="@dimen/selecevenue_titl_txt_paddingTop"
+                android:text="@string/frgmnt_sltvnu_bottomTitl2"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/actionbar_textcolor"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

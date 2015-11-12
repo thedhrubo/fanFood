@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tab_sltvnu_txtTopTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/frgmnt_sltvnu_top_title_bg"
+        android:paddingBottom="@dimen/selecevenue_titl_txt_paddingBottom"
+        android:paddingLeft="@dimen/selecevenue_titl_txt_paddingLeft"
+        android:paddingTop="@dimen/selecevenue_titl_txt_paddingTop"
+        android:text="@string/frgmnt_sltvnu_topTitl"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/frgmnt_sltvnu_top_title_txt"
+        android:textSize="18sp" />
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        android:layout_height="2dp"
+        android:layout_width="match_parent"
+        />
+
+    <axiz.four.androap.fanfood.test_tab.SlidingTabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="2dp"
+        android:background="@color/ColorPrimary"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        ></android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/allitem_linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/actionbar_backgrounf"
+        android:gravity="center_vertical|left"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginRight="5dp"
+            android:padding="3dp"
+            android:src="@drawable/ic_drawer_select_venue" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/allitem_txtBottomTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/selecevenue_titl_txt_paddingTop"
+                android:gravity="center_horizontal"
+                android:text="@string/concession_bottomTitl"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/actionbar_textcolor"
+                android:textSize="13sp" />
+            <TextView
+                android:id="@+id/allitem_txtBottomTitleconcession"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/selecevenue_titl_txt_paddingBottom"
+
+                android:gravity="center_horizontal"
+                android:text="@string/concession_bottomTitl"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/actionbar_textcolor"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical|right">
+
+            <ImageView
+                android:id="@+id/itemBasket_imageView2"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_checkout" />
+            <TextView
+                android:id="@+id/basket_count"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:gravity="right"
+                android:paddingRight="3dp"
+                android:paddingTop="2dp"
+                android:text="0"
+                android:textColor="#f0f0f0"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

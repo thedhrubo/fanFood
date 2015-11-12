@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_drawer_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/linearLayout"
+        android:layout_alignStart="@+id/linearLayout"
+        android:layout_alignRight="@+id/linearLayout"
+        android:layout_alignEnd="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/intro_btn_id_signin"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/btn_default_hight"
+            android:layout_marginRight="2dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/btn_default"
+            android:shadowColor="@color/btn_b_textshadow_default"
+            android:shadowDx="1.5"
+            android:shadowDy="1.5"
+            android:shadowRadius="3"
+            android:text="@string/btn_txt_intro_signin"
+            android:textColor="@color/btn_txt_color_default" />
+
+        <Button
+            android:id="@+id/intro_btn_id_register"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/btn_default_hight"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/btn_default"
+            android:shadowColor="@color/btn_b_textshadow_default"
+            android:shadowDx="1.5"
+            android:shadowDy="1.5"
+            android:shadowRadius="3"
+            android:text="@string/btn_txt_intro_register"
+            android:textColor="@color/btn_txt_color_default" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/intro_btn_id_getStart"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btn_default_hight"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/btn_default"
+            android:shadowColor="@color/btn_b_textshadow_default"
+            android:shadowDx="1.5"
+            android:shadowDy="1.5"
+            android:shadowRadius="3"
+            android:text="@string/btn_txt_intro_getstart"
+            android:textColor="@color/btn_txt_color_default" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroun_a"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/payment_txt_id_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/txt_payment_marginTop"
+        android:text="@string/txt_payment"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/actionbar_backgrounf"
+        android:textSize="@dimen/txt_payment_siz" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="@dimen/payment_img_width"
+        android:layout_height="@dimen/payment_img_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/payment_img_margin"
+        android:layout_marginTop="@dimen/payment_img_margin"
+        android:src="@drawable/img_payment" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/payment_txt_cardNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/payment_main_marginLeft"
+                android:layout_marginRight="@dimen/payment_main_marginRight"
+                android:background="@drawable/edittxt_default_bg"
+                android:hint="@string/txt_payment_hint_cardNo"
+                android:digits="0,1,2,3,4,5,6,7,8,9"
+                android:maxLength="20"
+                android:inputType="number"
+                android:lines="1"
+                android:padding="@dimen/payment_input_pading"
+                android:textSize="@dimen/payment_input_default_siz" >
+            </EditText>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/payment_main_marginLeft"
+                android:layout_marginRight="@dimen/payment_main_marginRight"
+                android:layout_marginTop="@dimen/payment_component_margintop"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/payment_txt_mm"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/edittxt_default_bg"
+                    android:hint="@string/txt_payment_hint_mm"
+                    android:digits="0,1,2,3,4,5,6,7,8,9"
+                    android:maxLength="2"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:padding="@dimen/payment_input_pading"
+                    android:textSize="@dimen/payment_input_default_siz" />
+
+                <EditText
+                    android:id="@+id/payment_txt_yy"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:background="@drawable/edittxt_default_bg"
+                    android:hint="@string/txt_payment_hint_yy"
+                    android:digits="0,1,2,3,4,5,6,7,8,9"
+                    android:maxLength="2"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:padding="@dimen/payment_input_pading"
+                    android:textSize="@dimen/payment_input_default_siz" />
+
+                <EditText
+
+                    android:id="@+id/payment_txt_cvv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="0.4"
+                    android:background="@drawable/edittxt_default_bg"
+                    android:hint="@string/txt_payment_hint_cvv"
+                    android:inputType="number"
+                    android:lines="1"
+                    android:padding="@dimen/payment_input_pading"
+                    android:textSize="@dimen/payment_input_default_siz" />
+            </LinearLayout>
+
+            <AutoCompleteTextView
+                android:id="@+id/payment_txt_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/payment_main_marginLeft"
+                android:layout_marginRight="@dimen/payment_main_marginRight"
+                android:layout_marginTop="@dimen/payment_component_margintop"
+                android:background="@drawable/edittxt_default_bg"
+                android:hint="@string/txt_payment_hint_country"
+                android:padding="@dimen/payment_input_pading"
+                android:text=""
+                android:textSize="@dimen/payment_input_default_siz" />
+
+            <Button
+                android:id="@+id/payment_btn_id_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/payment_main_marginLeft"
+                android:layout_marginRight="@dimen/payment_main_marginRight"
+                android:layout_marginTop="@dimen/payment_component_margintop"
+                android:layout_marginBottom="@dimen/payment_component_margintop"
+                android:background="@drawable/btn_default"
+                android:shadowColor="@color/btn_b_textshadow_default"
+                android:shadowDx="1.5"
+                android:shadowDy="1.5"
+                android:shadowRadius="3"
+                android:text="@string/payment_btn_id_register"
+                android:textColor="@color/btn_txt_color_default" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

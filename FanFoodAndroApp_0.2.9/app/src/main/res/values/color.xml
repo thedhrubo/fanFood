@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="actionbar_backgrounf">#4a4a4a</color>
+    <color name="backgroun_a">#e5e5e5</color>
+    <color name="backgroun_b">#f2f2f2</color>
+    <color name="actionbar_backgrounf_sami_trans">#CC4a4a4a</color>
+    <color name="actionbar_textcolor">#ffffff</color>
+    <color name="actionbar_tab_textcolor">#abcdef</color>
+    <color name="actionbar_whitebg">#f8f8f8</color>
+
+    <color name="fresh_white">#ffffff</color>
+
+    <color name="btn_txt_color_default">#ffffff</color>
+    <color name="btn_a_centerColor_default">#dd4a4a4a</color>
+    <color name="btn_a_startColor_default">#3a3a3a</color>
+    <color name="btn_a_endColor_default">#aa4f4f4f</color>
+
+    <color name="btn_b_centerColor_default">#303030</color>
+    <color name="btn_b_startColor_default">#202020</color>
+    <color name="btn_b_endColor_default">#3a3a3a</color>
+
+    <color name="btn_b_textshadow_default">#a23b1c</color>
+
+    <color name="edittext_border_color">#ec8f66</color>
+    <color name="edittext_border_un_color">#aa4a4a4a</color>
+    <color name="edittext_bg_color">#88f0f0f0</color>
+
+    <!-- Concession Activity -->
+    <color name="concession_frgmnt_sltvnu_btom_lyout_bg">#101010</color>
+    <color name="concession_divid_color">#b1b1b1</color>
+
+    <!-- Deawer menue -->
+    <color name="drawer_divid_color">#262624</color>
+
+    <!-- Select Venue -->
+    <color name="frgmnt_sltvnu_top_title_bg">#ebecf0</color>
+    <color name="frgmnt_sltvnu_top_title_txt">#3e3e40</color>
+    <color name="frgmnt_sltvnu_btom_lyout_bg">#ff453dd5</color>
+    <color name="frgmnt_sltvnu_divid_color">#b1b1b1</color>
+
+    <!-- FoodCatalog -->
+    <color name="fdctalog_top_title_bg">#ebecf0</color>
+    <color name="fdctalog_top_redbar">#b53222</color>
+
+    <!-- SubLayer 3str2pic_ -->
+    <color name="sublayer_itembg">#33f0f0f0</color>
+    <color name="sublayer_text2">#454545</color>
+    <color name="sublayer_text3">#a5a5a5</color>
+
+    <!-- ItemDerails -->
+    <color name="itemDtls_mainLaout_bg">#e8e6e9</color>
+    <color name="itemDtls_couner_bg">#f0f0f0</color>
+    <color name="itemDtls_titleTxt_color">#ffcb6961</color>
+
+    <color name="ColorPrimary">#4a4a4a</color>
+    <color name="ColorPrimaryDark">#262624</color>
+    <color name="tabsScrollColor">#fff2efbe</color>
+
+</resources>

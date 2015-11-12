@@ -1,0 +1,62 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="default_button_txtSize">17dp</dimen>
+
+     <!-- Activity Intro -->
+    <dimen name="btn_default_hight">50dp</dimen>
+
+    <!-- Activity Sign In -->
+    <dimen name="main_marginLeft">30dp</dimen>
+    <dimen name="main_marginRight">30dp</dimen>
+    <dimen name="signin_btn_txt_siz_forgetpass">16sp</dimen>
+    <dimen name="signin_btn_txt_marginTop_createnew">5dp</dimen>
+    <dimen name="signin_img_marginTop_sinin">5dp</dimen>
+    <dimen name="signin_Titlesiz">16sp</dimen>
+
+    <!-- Activity SignUp -->
+    <dimen name="txt_signup_siz">28sp</dimen>
+    <dimen name="txt_signup_input_hight">20dp</dimen>
+    <dimen name="txt_signup_marginTop">10dp</dimen>
+    <dimen name="activity_input_pading">5dp</dimen>
+    <dimen name="editTxt_input_margin_top">5dp</dimen>
+    <dimen name="editTxt_default_six">14sp</dimen>
+    <dimen name="txt_or_six">15sp</dimen>
+    <dimen name="signup_from_paddingLeft">15sp</dimen>
+    <dimen name="signup_from_paddingRight">15sp</dimen>
+
+    <!-- Activity Payment -->
+    <dimen name="txt_payment_siz">28sp</dimen>
+    <dimen name="txt_payment_marginTop">10dp</dimen>
+    <dimen name="payment_input_pading">7dp</dimen>
+    <dimen name="payment_input_default_siz">14sp</dimen>
+    <dimen name="payment_main_marginLeft">30dp</dimen>
+    <dimen name="payment_main_marginRight">30dp</dimen>
+    <dimen name="payment_img_width">75dp</dimen>
+    <dimen name="payment_img_height">75dp</dimen>
+    <dimen name="payment_img_margin">15dp</dimen>
+    <dimen name="payment_component_margintop">10dp</dimen>
+
+    <!-- Activity ItemDetaile -->
+    <dimen name="ItemDetaile_titleTxtSize">15sp</dimen>
+    <dimen name="ItemDetaile_titleTxtSizePrice">12sp</dimen>
+
+
+    <!-- Fragment selectVenue -->
+    <dimen name="selecevenue_titl_txt_paddingLeft">30dp</dimen>
+    <dimen name="selecevenue_titl_txt_paddingRight">0dp</dimen>
+    <dimen name="selecevenue_titl_txt_paddingTop">5dp</dimen>
+    <dimen name="selecevenue_titl_txt_paddingBottom">5dp</dimen>
+
+    <!-- adapter_3str_2pic_sublayer -->
+    <dimen name="sublayer_3str_2pic_txtSiz_txt1">15sp</dimen>
+    <dimen name="sublayer_3str_2pic_txtSiz_txt2">13sp</dimen>
+    <dimen name="sublayer_3str_2pic_txtSiz_txt3">12sp</dimen>
+
+    <!-- adapter_2str_1pic_sublayer -->
+    <dimen name="sublayer_2str_1pic_txtSiz_txt1">15sp</dimen>
+    <dimen name="sublayer_2str_1pic_txtSiz_txt2">13sp</dimen>
+
+</resources>

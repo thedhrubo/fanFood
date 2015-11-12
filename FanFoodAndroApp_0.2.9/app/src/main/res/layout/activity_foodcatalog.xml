@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/fdctroy_linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/actionbar_backgrounf"
+        android:gravity="left"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/fdctroy_txtBottomTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView1"
+            android:gravity="center_horizontal"
+            android:text="@string/fdctroy_bottomTitl"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/actionbar_textcolor"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="3dp"
+            android:src="@drawable/ic_drawer_select_venue" />
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ic_check_in" />
+
+        <TextView
+            android:id="@+id/fdctroy_Count"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/fdctroy_txtBottomTitle"
+            android:layout_alignLeft="@+id/imageView2"
+            android:layout_alignRight="@+id/imageView2"
+            android:layout_alignTop="@+id/imageView1"
+            android:gravity="right"
+            android:paddingRight="3dp"
+            android:paddingTop="2dp"
+            android:text="0"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="8sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+
+        android:layout_above="@+id/fdctroy_linearLayout1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="0dp"
+        android:background="@color/concession_frgmnt_sltvnu_btom_lyout_bg"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/helper_layout_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/fdctroy_toptextView1Title1"
+        android:background="@drawable/img_concession_bg"
+        android:orientation="vertical"
+        android:paddingTop="0dp" >
+
+        <ListView
+            android:id="@+id/fdctroy_listView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/img_selectvenue_list_bg"
+            android:divider="@color/concession_divid_color"
+            android:dividerHeight="1dip" >
+        </ListView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/fdctroy_toptextView1Title1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fdctalog_top_title_bg"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="@dimen/selecevenue_titl_txt_paddingBottom"
+        android:paddingLeft="@dimen/selecevenue_titl_txt_paddingLeft"
+        android:paddingTop="@dimen/selecevenue_titl_txt_paddingTop"
+        android:textColor="@color/frgmnt_sltvnu_top_title_txt"
+        android:textSize="18sp"
+        android:text="@string/fdctlog_top_title"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/fdctalog_top_redbar" >
+    </LinearLayout>
+
+</RelativeLayout>
